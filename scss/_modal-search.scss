@@ -1,0 +1,105 @@
+.modal {
+    &.open {
+    display: flex;
+    }
+    display: none;
+    position: relative;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: hsla(182, 63%, 54%, 0.747);
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    &-container {
+        height: 82px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-search {
+        padding: 32px;
+        width: 700px;
+        border: none;
+        font-size: 15px;
+    }
+    &-button {
+        padding: 32px 60px;
+        background-color: #3fd0d4;
+        border: none;
+        color: white;
+        font-weight: 700;
+        font-size: 15px;
+        &:hover {
+            background-color: #15b2b8;
+        }
+    }
+    &-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 15px;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:1024px) {
+    .modal {
+        &-container {
+            flex-direction: column;
+            padding: 0 16px;
+        }
+        &-search {
+            width: 100%;
+            display: block;
+            margin: 0 8px 10px;
+        }
+        &-button {
+            padding: 12px;
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width:740px) and (max-width:1023px) {
+    .modal {
+        &-container {
+            flex-direction: column;
+            padding: 0 8px;
+        }
+        &-search {
+            width: 80%;
+            display: block;
+            margin: 0 8px 10px;
+        }
+        &-button {
+            padding: 12px;
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 740px){
+    .modal {
+        &-container {
+            flex-direction: column;
+            padding: 0 8px;
+        }
+        &-search {
+            width: 100%;
+            display: block;
+            margin: 0 8px 10px;
+            padding: 18px;
+        }
+        &-button {
+            padding: 12px;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,112 @@
+.user {
+    &-imgs {
+        overflow: hidden;
+        .slick-track {
+            display: flex;
+        }
+        button.slick-prev.slick-arrow,
+        button.slick-next.slick-arrow
+         {
+            display: none !important;
+        }
+        &-item {
+            position: relative;
+            &:hover .user-imgs-content {
+                bottom: 0;
+                transition: all 0.5s ease;
+            }
+        }
+        &-content {
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            right: 0;
+            background-color: #3fd0d4;
+            padding: 25px 30px;
+            h1 {
+                color: white;
+                text-align: center;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 40px;
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 25px;
+                text-align: center;
+                color: white;
+            }
+            &-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span {
+                    margin: 5px 5px;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &-content {
+        background-color: #3abdc1;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding: 87px 34px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h1 {
+            font-size: 65px;
+            color: white;
+        }
+        p {
+            margin-top: 13px;
+            font-size: 18px;
+            color: white;
+            font-weight: 600;
+        }
+    }
+}
+@media screen and (max-width:1023px){
+    .user {
+        padding: 8px;
+        margin-bottom: 150px;
+        &-content {
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+}
+
+@media (min-width:740px) and (max-width:1023px) {
+    .user {
+        padding: 8px;
+        margin-bottom: 100px;
+        &-content {
+            grid-template-columns: repeat(2,1fr);
+            &-item {
+                padding: 15px 0;
+            }
+            p {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 740px){
+    .user {
+        padding: 8px;
+        margin-bottom: 100px;
+        &-content {
+            grid-template-columns: repeat(1,1fr);
+            &-item {
+                padding: 15px 0;
+            }
+            p {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

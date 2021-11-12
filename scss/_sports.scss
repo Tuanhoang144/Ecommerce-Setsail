@@ -1,0 +1,70 @@
+.sport {
+    &-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 130px;
+        &-header {
+            text-align: center;
+            padding: 101px 0 47px;
+            h2 {
+                font-family: "Satisfy",sans-serif;
+                color: $blue-color;
+                font-size: 33px;
+                
+            }
+            h1 {
+                font-size:55px ;
+            }
+        }
+        &-video {
+            max-width: 855px;
+            img {
+                width: 100%;
+            }
+        }
+        
+        p {
+            max-width: 856px;
+            font-size: 14px;
+            margin-top: 28px;
+            line-height: 24px;
+        }
+        a {
+            margin-top: 32px;
+            padding: 18px 66px;
+            font-size: 18px;
+            color: white;
+            background-color: #3fd0d4;
+            border: none;
+        }
+    
+    }
+}
+
+
+@media (min-width:740px) and (max-width:1023px) {
+    .sport-container-video iframe {
+        width: 750px;
+      }
+      .sport-container {
+        padding: 100px 8px;
+      }
+}
+
+
+@media screen and (max-width:720px) {
+    .sport-container-video iframe {
+      width: 500px;
+    }
+    .sport-container {
+      padding: 100px 8px;
+    }
+}
+
+@media screen and (max-width:450px) {
+.sport-container-video iframe {
+ width: 340px;
+}
+}

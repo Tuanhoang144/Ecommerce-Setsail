@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>Winter Holidays - Setsail</title>
+    <link rel="icon" href="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/cropped-favicon-1-32x32.png" sizes="32x32">
+    <!-- Fontawesome Css file Include -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800;900&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+          <div class="header-container">
+            <img class="header-logo" srcset="./img/logo.png 2x" alt="" />
+            <img class="header-logo-menu" srcset="./img/logo-mobile-img.png 2x" alt="">
+            <div class="header-menu">
+              <ul class="menu">
+                <li class="menu-item">
+                  <a href="#" class="menu-links text-blue d-none-mobile"> Home </a>
+                  <input type="checkbox" class="hidden-click" id="sub1">
+                  <label for="sub1" onClick="abc('#sub1')" class="label">Home <i class="fas fa-caret-down"></i></label>
+                  <ul class="menu-subnav sub1">
+                    <li class="menu-subnav-link">
+                      <a href="">Travel Agency</a>
+                    </li>
+                    <li class="menu-subnav-link text-blue">
+                      <a href="">Winter Holidays</a>
+                    </li>
+                    <li class="menu-subnav-link">
+                      <a href="">Exotic Destinations</a>
+                    </li>
+                    <li class="menu-subnav-link">
+                      <a href="">Summer Holidays</a>
+                    </li>
+                    <li class="menu-subnav-link"><a href="">City Tours</a></li>
+                    <li class="menu-subnav-link">
+                      <a href="">New Year Trips</a>
+                    </li>
+                    <li class="menu-subnav-link">
+                      <a href="">Destinations Carousel</a>
+                    </li>
+                    <li class="menu-subnav-link"><a href="">Wine Tours</a></li>
+                    <li class="menu-subnav-link">
+                      <a href="">Vacation Showcase</a>
+                    </li>
+                    <li class="menu-subnav-link"><a href="">Landing</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-links d-none-mobile"> Page </a>
+                  <input type="checkbox" class="hidden-click" id="sub2">
+                  <label for="sub2" onClick="abc('#sub2')" class="label">Page <i class="fas fa-caret-down"></i></label>
+                  <ul class="menu-subnav sub2">
+                    <li class="menu-subnav-link"><a href="">About Us</a></li>
+                    <li class="menu-subnav-link">
+                      <a href="">What We Offer</a>
+                    </li>
+                    <li class="menu-subnav-link text-blue">
+                      <a href="">OurTeam</a>
+                    </li>
+                    <li class="menu-subnav-link">
+                      <a href="">Get In Touch</a>
+                    </li>
+                    <li class="menu-subnav-link">
+                      <a href="">Get In Touch</a>
+                    </li>
+                    <li class="menu-subnav-link"><a href="">Contact Us</a></li>
+                    <li class="menu-subnav-link"><a href="">FAQ Page</a></li>
+                    <li class="menu-subnav-link"><a href="">Coming Soon</a></li>
+                    <li class="menu-subnav-link"><a href="">Error Page</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-links d-none-mobile"> Destinations </a>
+                  <input type="checkbox" class="hidden-click" id="sub3">
+                  <label for="sub3" onClick="abc('#sub3')" class="label">Destinations <i class="fas fa-caret-down"></i></label>
+                  <ul class="menu-subnav sub3">
+                    <li class="menu-subnav-link">
+                      <a href="">Destination List</a>
+                    </li>
+                    <li class="menu-subnav-link">
+                      <a href="">Destination Slider</a>
+                    </li>
+                    <li class="menu-subnav-link text-blue">
+                      <a href="">Destination Item</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-links d-none-mobile"> Tours </a>
+                  <input type="checkbox" class="hidden-click" id="sub4">
+                  <label for="sub4" onClick="abc('#sub4')" class="label"> Tours  <i class="fas fa-caret-down"></i> </label>
+                  <ul class="menu-subnav sub4">
+                    <li class="menu-subnav-link">
+                      <a href="">Standard List</a>
+                    </li>
+                    <li class="menu-subnav-link">
+                      <a href="">Gallery List</a>
+                    </li>
+                    <li class="menu-subnav-link text-blue">
+                      <a href="">Split Item</a>
+                    </li>
+                    <li class="menu-subnav-link text-blue">
+                      <a href="">Tour Item</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-links d-none-mobile"> Blog </a>
+                  <input type="checkbox" class="hidden-click" id="sub5">
+                  <label for="sub5" onClick="abc('#sub5')" class="label"> Blog <i class="fas fa-caret-down"></i> </label>
+                  <ul class="menu-subnav sub5">
+                    <li class="menu-subnav-link">
+                      <a href="">Blog Masonry</a>
+                    </li>
+                    <li class="menu-subnav-link">
+                      <a href="">Blog Standard</a>
+                    </li>
+                    <li class="menu-subnav-link text-blue">
+                      <a href="">Post Types</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-links d-none-mobile"> Shop </a>
+                  <input type="checkbox" class="hidden-click" id="sub6">
+                  <label for="sub6" onClick="abc('#sub6')" class="label"> Shop  <i class="fas fa-caret-down"></i></label>
+                  <ul class="menu-subnav sub6">
+                    <li class="menu-subnav-link">
+                      <a href="">Product List</a>
+                    </li>
+                    <li class="menu-subnav-link">
+                      <a href="">Product Single</a>
+                    </li>
+                    <li class="menu-subnav-link text-blue">
+                      <a href="">Shop Layouts</a>
+                    </li>
+                    <li class="menu-subnav-link text-blue">
+                      <a href="">Shop Pages</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-links  d-none-mobile"> Elements </a>
+                  <input type="checkbox" class="hidden-click" id="sub7">
+                  <label for="sub7" onClick="abc('#sub7')" class="label"> Elements </label>
+                  <!-- <ul class="menu-subnav sub7">
+                    <li class="menu-subnav-link">
+                      <a href="">Product List</a>
+                    </li>
+                    <li class="menu-subnav-link">
+                      <a href="">Product Single</a>
+                    </li>
+                    <li class="menu-subnav-link text-blue">
+                      <a href="">Shop Layouts</a>
+                    </li>
+                    <li class="menu-subnav-link text-blue">
+                      <a href="">Shop Pages</a>
+                    </li>
+                  </ul> -->
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-btn-nav"><i class="fas fa-bars"></i></div>
+            <div class="header-position">
+              <span class="header-icon header-icon-cart"
+                ><i class="fas fa-shopping-cart"></i>
+                <div class="cart-product">
+                  <p>No product in cart</p>
+                </div>
+              </span>
+              <span class="header-icon header-icon-search"
+                ><i class="fas fa-search"></i
+              ></span>
+              <div class="modal js-search">
+                <div class="modal-container">
+                  <span class="modal-icon"
+                    ><i class="far fa-window-close"></i
+                  ></span>
+                  <input
+                    class="modal-search"
+                    type="text"
+                    placeholder="Search..."
+                  />
+                  <button class="modal-button">FIND NOW</button>
+                </div>
+              </div>
+              <span class="header-icon header-icon-list"
+                ><i class="fas fa-list"></i>
+              </span>
+            </div>
+          </div>
+        <div class="list-map">
+          <div class="list-map-container">
+            <a class="list-map-close"><i class="far fa-window-close"></i></a>
+            <div class="list-map-logo">
+              <img srcset="./img/logo.png" alt="" />
+            </div>
+            <div class="list-map-slidearea2">
+              <img srcset="./img/sidearea-img-2.png" alt="" />
+            </div>
+            <div class="list-map-slidearea">
+              <img srcset="./img/sidearea-img.jpg" alt="" />
+            </div>
+            <p class="list-map-logo-content">
+              Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis theme natoque
+            </p>
+            <h1 class="list-map-header">Find Your Destination</h1>
+            <div class="list-map-logo-search">
+              <input type="text" placeholder="Search..." />
+              <button><i class="fas fa-search"></i></button>
+            </div>
+            <h1 class="list-map-header">Flow Me</h1>
+            <div class="list-map-logo-icon">
+              <span><i class="fab fa-twitter"></i></span>
+              <span><i class="fab fa-facebook-f"></i></span>
+              <span><i class="fab fa-youtube"></i></span>
+              <span><i class="fab fa-instagram-square"></i></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="slider">
+          <div class="slider-container">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/sider1.jpg" alt="" />
+                  <div class="swiper-slide-header">
+                    <h2 class=""  data-aos="fade-up">Enjoy Your</h2>
+                    <h1  data-aos="fade-up">Winter Vacations</h1>
+                    <p  data-aos="fade-up">
+                      Loren ipsum dolor sit amet, consectetuer adipiscing
+                      elit.Aenean comodo ligula eget dolor. Aenean massa. Cum
+                      sociis Theme
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/slider2.jpg" alt="" />
+                  <div class="swiper-slide-header">
+                    <h2 class="" data-aos="fade-right" data-aos-delay="200">From Alps</h2>
+                    <h1 data-aos="fade-right" data-aos-delay="200">Snow Adventure</h1>
+                    <p data-aos="fade-right" data-aos-delay="200">
+                      Loren ipsum dolor sit amet, consectetuer adipiscing
+                      elit.Aenean comodo ligula eget dolor. Aenean massa. Cum
+                      sociis Theme
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button swiper-button-next"></div>
+              <div class="swiper-button swiper-button-prev"></div>
+            </div>
+          </div>
+        </section>
+        <section class="service">
+          <div class="service-list" data-aos="fade-down"  data-aos-delay="300">
+            <div class="service-item" >
+              <div class="service-item-img">
+                <img src="./img/tour-featured-1.jpg" alt="" />
+              </div>
+              <div class="service-item-icon">
+                <span><i class="far fa-calendar"></i><span></span>  1</span>
+                <span><i class="fas fa-user"></i> <span></span>  13+</span>
+                <span><i class="fas fa-map-marker-alt"></i><span  class="service-item-icon-end">Skiing</span></span>
+              </div>
+              <div class="service-item-content">
+                <h1>Winter Action</h1>
+                <p >Lorem ipsum dotor sit ammet, consectetuer adipiscing el english english</p>
+                <div class="service-item-content-evaluate">
+                  <span>$960</span>
+                  <span>6.7 <span></span><i class="fas fa-star-half-alt"></i> <span></span> Good</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-img">
+                <img src="./img/tour-featured-2.jpg" alt="" />
+              </div>
+              <div class="service-item-icon">
+                <span><i class="far fa-calendar"></i><span></span>  1</span>
+                <span><i class="fas fa-user"></i> <span></span>  13+</span>
+                <span><i class="fas fa-map-marker-alt"></i><span  class="service-item-icon-end">Skiing</span></span>
+              </div>
+              <div class="service-item-content">
+                <h1>Skiing In Alps</h1>
+                <p>Lorem ipsum dotor sit ammet, consectetuer adipiscing el english english</p>
+                <div class="service-item-content-evaluate">
+                  <span>$1000</span>
+                  <span>6.7 <span></span><i class="fas fa-star-half-alt"></i> <span></span> Good</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-img">
+                <img src="./img/tour-featured-3.jpg" alt="" />
+              </div>
+              <div class="service-item-icon">
+                <span><i class="far fa-calendar"></i><span></span>  1</span>
+                <span><i class="fas fa-user"></i> <span></span>  13+</span>
+                <span><i class="fas fa-map-marker-alt"></i><span  class="service-item-icon-end">Skiing</span></span>
+              </div>
+              <div class="service-item-content">
+                <h1>Snow Surfing</h1>
+                <p>Lorem ipsum dotor sit ammet, consectetuer adipiscing el english english</p>
+                <div class="service-item-content-evaluate">
+                  <span>$450</span>
+                  <span>6.0 <span></span><i class="fas fa-star-half-alt"></i> <span></span> Good</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-img">
+                <img src="./img/tour-featured-4.jpg" alt="" />
+              </div>
+              <div class="service-item-icon">
+                <span><i class="far fa-calendar"></i><span></span>  1</span>
+                <span><i class="fas fa-user"></i> <span></span>  13+</span>
+                <span><i class="fas fa-map-marker-alt"></i><span  class="service-item-icon-end">Skiing</span></span>
+              </div>
+              <div class="service-item-content">
+                <h1>Kids Ski School</h1>
+                <p>Lorem ipsum dotor sit ammet, consectetuer adipiscing el english english</p>
+                <div class="service-item-content-evaluate">
+                  <span>$720</span>
+                  <span>7.3 <span></span><i class="fas fa-star-half-alt"></i> <span></span> Good</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-img">
+                <img src="./img/tour-featured-5.jpg" alt="" />
+              </div>
+              <div class="service-item-icon">
+                <span><i class="far fa-calendar"></i><span></span>  1</span>
+                <span><i class="fas fa-user"></i> <span></span>  13+</span>
+                <span><i class="fas fa-map-marker-alt"></i><span  class="service-item-icon-end">Skiing</span></span>
+              </div>
+              <div class="service-item-content">
+                <h1>Active Winter</h1>
+                <p>Lorem ipsum dotor sit ammet, consectetuer adipiscing el english english</p>
+                <div class="service-item-content-evaluate">
+                  <span>$1600</span>
+                  <span>6.7 <span></span><i class="fas fa-star-half-alt"></i> <span></span> Good</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-item" >
+              <div class="service-item-img">
+                <img src="./img/tour-featured-1.jpg" alt="" />
+              </div>
+              <div class="service-item-icon">
+                <span><i class="far fa-calendar"></i><span></span>  1</span>
+                <span><i class="fas fa-user"></i> <span></span>  13+</span>
+                <span><i class="fas fa-map-marker-alt"></i><span  class="service-item-icon-end">Skiing</span></span>
+              </div>
+              <div class="service-item-content">
+                <h1>Winter Action</h1>
+                <p >Lorem ipsum dotor sit ammet, consectetuer adipiscing el english english</p>
+                <div class="service-item-content-evaluate">
+                  <span>$960</span>
+                  <span>6.7 <span></span><i class="fas fa-star-half-alt"></i> <span></span> Good</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-img">
+                <img src="./img/tour-featured-2.jpg" alt="" />
+              </div>
+              <div class="service-item-icon">
+                <span><i class="far fa-calendar"></i><span></span>  1</span>
+                <span><i class="fas fa-user"></i> <span></span>  13+</span>
+                <span><i class="fas fa-map-marker-alt"></i><span  class="service-item-icon-end">Skiing</span></span>
+              </div>
+              <div class="service-item-content">
+                <h1>Skiing In Alps</h1>
+                <p>Lorem ipsum dotor sit ammet, consectetuer adipiscing el english english</p>
+                <div class="service-item-content-evaluate">
+                  <span>$1000</span>
+                  <span>6.7 <span></span><i class="fas fa-star-half-alt"></i> <span></span> Good</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-img">
+                <img src="./img/tour-featured-3.jpg" alt="" />
+              </div>
+              <div class="service-item-icon">
+                <span><i class="far fa-calendar"></i><span></span>  1</span>
+                <span><i class="fas fa-user"></i> <span></span>  13+</span>
+                <span><i class="fas fa-map-marker-alt"></i><span  class="service-item-icon-end">Skiing</span></span>
+              </div>
+              <div class="service-item-content">
+                <h1>Snow Surfing</h1>
+                <p>Lorem ipsum dotor sit ammet, consectetuer adipiscing el english english</p>
+                <div class="service-item-content-evaluate">
+                  <span>$450</span>
+                  <span>6.0 <span></span><i class="fas fa-star-half-alt"></i> <span></span> Good</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-img">
+                <img src="./img/tour-featured-4.jpg" alt="" />
+              </div>
+              <div class="service-item-icon">
+                <span><i class="far fa-calendar"></i><span></span>  1</span>
+                <span><i class="fas fa-user"></i> <span></span>  13+</span>
+                <span><i class="fas fa-map-marker-alt"></i><span  class="service-item-icon-end">Skiing</span></span>
+              </div>
+              <div class="service-item-content">
+                <h1>Kids Ski School</h1>
+                <p>Lorem ipsum dotor sit ammet, consectetuer adipiscing el english english</p>
+                <div class="service-item-content-evaluate">
+                  <span>$720</span>
+                  <span>7.3 <span></span><i class="fas fa-star-half-alt"></i> <span></span> Good</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-img">
+                <img src="./img/tour-featured-5.jpg" alt="" />
+              </div>
+              <div class="service-item-icon">
+                <span><i class="far fa-calendar"></i><span></span>  1</span>
+                <span><i class="fas fa-user"></i> <span></span>  13+</span>
+                <span><i class="fas fa-map-marker-alt"></i><span  class="service-item-icon-end">Skiing</span></span>
+              </div>
+              <div class="service-item-content">
+                <h1>Active Winter</h1>
+                <p>Lorem ipsum dotor sit ammet, consectetuer adipiscing el english english</p>
+                <div class="service-item-content-evaluate">
+                  <span>$1600</span>
+                  <span>6.7 <span></span><i class="fas fa-star-half-alt"></i> <span></span> Good</span>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+        <section class="sport">
+              <div class="container">
+                <div class="sport-container">
+                      <div class="sport-container-header">
+                        <h2 data-aos="fade-right" data-aos-delay="200">Try now</h2>
+                        <h1 data-aos="fade-right" data-aos-delay="200">Winter Sport</h1>
+                      </div>
+                      <div class="sport-container-video">
+                        <iframe width="855px" height="415px" src="https://www.youtube.com/embed/FsZ7KBcarfY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis sit amet, consectetuer adipiscing elit Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit ame</p>
+                      <a href="#">View More</a>
+                </div>
+              </div>
+        </section>
+        <section class="review">
+              <div class="review-header">
+                <h1  data-aos="fade-right" data-aos-delay="200">Top Reviews</h1>
+                <p  data-aos="fade-right" data-aos-delay="200">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum</p>
+              </div>
+              <div class="review-list">
+                <div class="review-item">
+                  <div class="review-item-img">
+                    <img src="./img/user-img-1.png" alt="">
+                  </div>
+                  <div class="review-item-content">
+                    <h1>Beautiful Holland</h1>
+                    <span class="review-item-icon">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <p>Fa etor eviuas lwqedit tas, vut et nihc egam ubulas. Ei euvy</p>
+                    <h2 class="review-item-user">Susan Day</h2>
+                  </div>
+                </div>
+
+                <div class="review-item">
+                  <div class="review-item-img">
+                    <img src="./img/user-img-5.png" alt="">
+                  </div>
+                  <div class="review-item-content">
+                    <h1>Temple Tour</h1>
+                    <span class="review-item-icon">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <p>Fa etor eviuas lwqedit tas, vut et nihc egam ubulas. Ei euvy</p>
+                    <h2 class="review-item-user">Susan Day</h2>
+                  </div>
+                </div>
+
+                <div class="review-item">
+                  <div class="review-item-img">
+                    <img src="./img/user-img-7.png" alt="">
+                  </div>
+                  <div class="review-item-content">
+                    <h1>Holland Canals</h1>
+                    <span class="review-item-icon">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <p>Fa etor eviuas lwqedit tas, vut et nihc egam ubulas. Ei euvy</p>
+                    <h2 class="review-item-user">Susan Day</h2>
+                  </div>
+                </div>
+
+                <div class="review-item">
+                  <div class="review-item-img">
+                    <img src="./img/user-img-4.png" alt="">
+                  </div>
+                  <div class="review-item-content">
+                    <h1>Taipei</h1>
+                    <span class="review-item-icon">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <p>Pe utor aviuas lwpadit tas, vut et nihc egam yubulas. Si euvy </p>
+                    <h2 class="review-item-user">Susan Day</h2>
+                  </div>
+                </div>
+
+                <div class="review-item">
+                  <div class="review-item-img">
+                    <img src="./img/user-img-3.png" alt="">
+                  </div>
+                  <div class="review-item-content">
+                    <h1>Kaohsiung</h1>
+                    <span class="review-item-icon">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <p>Fa etor eviuas lwqedit tas, vut et nihc egam ubulas. Ei euvy</p>
+                    <h2 class="review-item-user">Susan Day</h2>
+                  </div>
+                </div>
+
+                <div class="review-item">
+                  <div class="review-item-img">
+                    <img src="./img/user-img-2.png" alt="">
+                  </div>
+                  <div class="review-item-content">
+                    <h1>Barcelona</h1>
+                    <span class="review-item-icon">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <p>Fa etor eviuas lwqedit tas, vut et nihc egam ubulas. Ei euvy</p>
+                    <h2 class="review-item-user">Susan Day</h2>
+                  </div>
+                </div>
+
+                <div class="review-item">
+                  <div class="review-item-img">
+                    <img src="./img/user-img-6.png" alt="">
+                  </div>
+                  <div class="review-item-content">
+                    <h1>Madrid</h1>
+                    <span class="review-item-icon">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <p>Fa etor eviuas lwqedit tas, vut et nihc egam ubulas. Ei euvy</p>
+                    <h2 class="review-item-user">Susan Day</h2>
+                  </div>
+                </div>
+                
+                
+            </div>
+        </section>
+        <section class="interest">
+            <div class="container">
+              <div class="interest-container">
+                <div class="interest-header" >
+                  <h2 data-aos="fade-right" data-aos-delay="200">Enjoy Your</h2>
+                  <h1 data-aos="fade-right" data-aos-delay="200">Winter Holiday</h1>
+                  <p data-aos="fade-right" data-aos-delay="200">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor lorem ipsum.</p>
+                </div>
+                <div class="interest-content"  data-aos="fade-start" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="interest-content-restaurants">
+                      <div class="interest-content-restaurants-header">
+                            <img src="./img/h1-custom-icon-img-1.png" alt="">
+                      </div>
+                      <h1>Restaurants</h1>
+                      <p>Aenean commodo ligula eget dolor. Lorem ipsum</p>
+                    </div>
+                    <div class="interest-content-restaurants" >
+                      <div class="interest-content-restaurants-header">
+                            <img src="./img/h1-custom-icon-img-2.png" alt="">
+                      </div>
+                      <h1>Sightseeing</h1>
+                      <p>Aenean commodo ligula eget dolor. Lorem ipsum</p>
+                    </div>
+                    <div class="interest-content-restaurants">
+                      <div class="interest-content-restaurants-header">
+                            <img src="./img/h1-custom-icon-img-3.png" alt="">
+                      </div>
+                      <h1>Shops & Boutiques</h1>
+                      <p>Aenean commodo ligula eget dolor. Lorem ipsum</p>
+                    </div>
+                    <div class="interest-content-restaurants">
+                      <div class="interest-content-restaurants-header">
+                            <img src="./img/h1-custom-icon-img-4.png" alt="">
+                      </div>
+                      <h1>Where to Stay</h1>
+                      <p>Aenean commodo ligula eget dolor. Lorem ipsum</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section class="user">
+          <div class="user-container">
+              <div class="user-imgs">
+                <div class="user-imgs-item">
+                    <img src="./img/our-team-1.jpg" alt="">
+                  <div class="user-imgs-content">
+                        <h1>Jack Burton</h1>
+                        <p>Peq des sut perspi ciatis ynde oninis iste matus error sit bolu ptato dolar</p>
+                        <div class="user-imgs-content-icon">
+                          <span><i class="fab fa-twitter"></i></span>
+                          <span><i class="fab fa-facebook-f"></i></span>
+                          <span><i class="fab fa-youtube"></i></span>
+                          <span><i class="fab fa-instagram-square"></i></span>
+                        </div>
+                  </div>
+                </div>
+                <div class="user-imgs-item">
+                  <img src="./img/our-team-2.jpg" alt="">
+                <div class="user-imgs-content">
+                      <h1>Grace West</h1>
+                      <p>Peq des sut perspi ciatis ynde oninis iste matus error sit bolu ptato dolar</p>
+                      <div class="user-imgs-content-icon">
+                        <span><i class="fab fa-twitter"></i></span>
+                        <span><i class="fab fa-facebook-f"></i></span>
+                        <span><i class="fab fa-youtube"></i></span>
+                        <span><i class="fab fa-instagram-square"></i></span>
+                      </div>
+                </div>
+                </div>
+                <div class="user-imgs-item">
+                  <img src="./img/our-team-3.jpg" alt="">
+                <div class="user-imgs-content">
+                      <h1>Joe Avery</h1>
+                      <p>Peq des sut perspi ciatis ynde oninis iste matus error sit bolu ptato dolar</p>
+                      <div class="user-imgs-content-icon">
+                        <span><i class="fab fa-twitter"></i></span>
+                        <span><i class="fab fa-facebook-f"></i></span>
+                        <span><i class="fab fa-youtube"></i></span>
+                        <span><i class="fab fa-instagram-square"></i></span>
+                      </div>
+                </div>
+                </div>
+                <div class="user-imgs-item">
+                  <img src="./img/our-team-4.jpg" alt="">
+                <div class="user-imgs-content">
+                      <h1>Bella Larson</h1>
+                      <p>Peq des sut perspi ciatis ynde oninis iste matus error sit bolu ptato dolar</p>
+                      <div class="user-imgs-content-icon">
+                        <span><i class="fab fa-twitter"></i></span>
+                        <span><i class="fab fa-facebook-f"></i></span>
+                        <span><i class="fab fa-youtube"></i></span>
+                        <span><i class="fab fa-instagram-square"></i></span>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="user-imgs-item">
+                    <img src="./img/our-team-1.jpg" alt="">
+                  <div class="user-imgs-content">
+                        <h1>Jack Burton</h1>
+                        <p>Peq des sut perspi ciatis ynde oninis iste matus error sit bolu ptato dolar</p>
+                        <div class="user-imgs-content-icon">
+                          <span><i class="fab fa-twitter"></i></span>
+                          <span><i class="fab fa-facebook-f"></i></span>
+                          <span><i class="fab fa-youtube"></i></span>
+                          <span><i class="fab fa-instagram-square"></i></span>
+                        </div>
+                  </div>
+                  </div>
+                  <div class="user-imgs-item">
+                    <img src="./img/our-team-2.jpg" alt="">
+                  <div class="user-imgs-content">
+                      <h1>Grace West</h1>
+                      <p>Peq des sut perspi ciatis ynde oninis iste matus error sit bolu ptato dolar</p>
+                      <div class="user-imgs-content-icon">
+                        <span><i class="fab fa-twitter"></i></span>
+                        <span><i class="fab fa-facebook-f"></i></span>
+                        <span><i class="fab fa-youtube"></i></span>
+                        <span><i class="fab fa-instagram-square"></i></span>
+                        </div>
+                  </div>
+                  </div>
+                  <div class="user-imgs-item">
+                    <img src="./img/our-team-3.jpg" alt="">
+                  <div class="user-imgs-content">
+                      <h1>Joe Avery</h1>
+                      <p>Peq des sut perspi ciatis ynde oninis iste matus error sit bolu ptato dolar</p>
+                      <div class="user-imgs-content-icon">
+                        <span><i class="fab fa-twitter"></i></span>
+                        <span><i class="fab fa-facebook-f"></i></span>
+                        <span><i class="fab fa-youtube"></i></span>
+                        <span><i class="fab fa-instagram-square"></i></span>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="user-imgs-item">
+                    <img src="./img/our-team-4.jpg" alt="">
+                  <div class="user-imgs-content">
+                      <h1>Bella Larson</h1>
+                      <p>Peq des sut perspi ciatis ynde oninis iste matus error sit bolu ptato dolar</p>
+                      <div class="user-imgs-content-icon">
+                        <span><i class="fab fa-twitter"></i></span>
+                        <span><i class="fab fa-facebook-f"></i></span>
+                        <span><i class="fab fa-youtube"></i></span>
+                        <span><i class="fab fa-instagram-square"></i></span>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+              <div id="numbers" class="user-content">
+                <div class="user-content-item">
+                  <h1 class="fig-number">452</h1>
+                  <p>Tourists</p>
+                </div>
+                <div class="user-content-item">
+                  <h1 class="fig-number">120</h1>
+                  <p>Years</p>
+                </div>
+                <div class="user-content-item">
+                  <h1 class="fig-number">283</h1>
+                  <p>Cottages</p>
+                </div>
+                <div class="user-content-item">
+                  <h1 class="fig-number">197</h1>
+                  <p>Restaurants</p>
+                </div>
+              </div>
+          </div>
+        </section>
+        <section class="resort">
+                <div class="resort-container">
+                  <div class="resort-header" >
+                    <h2 data-aos="fade-down" data-aos-delay="100">Chose Your</h2>
+                    <h1 data-aos="fade-down" data-aos-delay="100">Winter Resort</h1>
+                    <p data-aos="fade-down" data-aos-delay="200">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor lorem ipsum.</p>
+                  </div>
+                  <div class="resort-content" data-aos="fade-down" data-aos-delay="200">
+                    <div class="resort-content-item">
+                      <div class="resort-content-img">
+                        <img src="./img/destinations-featured-img-1.jpg" alt="">
+                        <span class="resort-content-desc">Slovenia</span>
+                        <div class="resort-overlay"></div>
+                      </div>
+                    </div>
+                    
+                    <div class="resort-content-item">
+                      <div class="resort-content-img">
+                        <img src="./img/destinations-featured-img-9-1.jpg" alt="">
+                        <span class="resort-content-desc">France</span>
+                        <div class="resort-content-star"><i class="fas fa-star"></i></div>
+                        <div class="resort-overlay"></div>
+                      </div>
+                    </div>
+
+                    <div class="resort-content-item">
+                      <div class="resort-content-img">
+                        <img src="./img/destinations-featured-img-3.jpg" alt="">
+                        <span class="resort-content-desc">Switferland</span>
+                        <div class="resort-overlay"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+            <div class="footer-header">
+                  <div class="footer-item">
+                    <img src="./img/logo.png" alt="">
+                    <p>Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae</p>
+                    <div class="footer-item-address">
+                      <a class="footer-item-link"><i class="fas fa-envelope-square"></i> <span>htuan8288@gmail.com</span> </a>
+                      <a class="footer-item-link"><i class="fas fa-phone"></i> <span>0385390931</span></a>
+                      <a class="footer-item-link"><i class="fas fa-map-marker-alt"></i> <span>455, LeVanViet, PhuongTangNhonPhuA, Quan9</span></a>
+                    </div>
+                  </div>
+                  <div class="footer-item">
+                    <h1 class="footer-item-heading">Our Recent Posts</h1>
+                    <div class="footer-address">
+                      <a>Visit Thailand Bali And China</a>
+                      <p>September 7, 2016</p>
+                    </div>
+                    <div class="footer-address">
+                      <a>The Sound Of Our Jungle</a>
+                      <p>September 7, 2016</p>
+                    </div>
+                    <div class="footer-address">
+                      <a>New Year, New Resolutions!</a>
+                      <p>September 7, 2016</p>
+                    </div>
+                  </div>
+                  <div class="footer-item">
+                    <h1 class="footer-item-heading">Subscribe to our Newsletter</h1>
+                    <span>Etiam rhoncus. Maecenas temp us, tellus eget condimentum rho</span>
+                    <div class="footer-information">
+                      <div class="inputname">
+                          <button><i class="fas fa-user"></i></button>
+                          <input type="text" placeholder="Name">
+                      </div>
+                      <div class="inputname">
+                        <button><i class="fas fa-user"></i></button>
+                        <input type="text" placeholder="Email">
+                      </div>
+                      <button class="subcribe">SUBSCRIBE</button>
+                    </div>
+                  </div>
+                  <div class="footer-item">
+                    <h1 class="footer-item-heading">Our Instagram</h1>
+                    <span>Aliquam lorem ante, dapibus inviver raqui feugiat a, tellus. Phasellus null</span>
+                  </div>
+            </div>
+            <div class="footer-copyright">
+                Powered by @<p> Qode Interactive 2018</p>
+            </div>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./scripts/all.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    
+    <script src="./scripts/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init(); 
+    </script>
+  </body>
+</html>

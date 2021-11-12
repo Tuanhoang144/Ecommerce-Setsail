@@ -1,0 +1,101 @@
+.interest {
+    padding: 150px;
+    // &-container {
+
+    // }
+    &-header {
+        margin-bottom: 68px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-family: "Satisfy",sans-serif;
+            font-size: 33px;
+            line-height: 60px;
+            color: $blue-color;
+            font-weight: 300;
+        }
+        h1 {
+            font-size: 66px;
+            color: $heading-color;
+            line-height: 70px;
+            max-width: 535px;
+            text-align: center;
+        }
+
+        p {
+            max-width: 535px;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 17px;
+            line-height: 34px;
+        }
+    }
+
+    &-content {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content: center;
+        align-items: center;
+        &-restaurants {
+            padding: 0 25px;
+            h1 {
+                margin-top: 27px;
+                font-size: 17px;
+                text-align: center;
+            }
+            p {
+                margin-top: 11px;
+                font-size: 14px;
+                text-align: center;
+                line-height: 22px;
+
+            }
+            &-header {
+                img {
+                    margin: auto;
+                        transition: all 1s ease;
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1023px){
+    .interest {
+        padding: 8px;
+        margin-bottom: 150px;
+        &-content {
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+}
+
+@media (min-width:740px) and (max-width:1023px) {
+    .interest {
+        padding: 8px;
+        margin-bottom: 100px;
+        &-content {
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
+
+@media screen and (max-width: 740px){
+    .interest {
+        padding: 8px;
+        margin-bottom: 150px;
+        &-content {
+            grid-template-columns: repeat(1,1fr);
+            &-restaurants {
+                padding: 15px 25px;
+            }
+        }
+        
+    }
+}

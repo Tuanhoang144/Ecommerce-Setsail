@@ -1,0 +1,119 @@
+.menu {
+    height: 100%;
+    display: flex;
+    &-item {
+        padding: 0 30px;
+        list-style: none;
+        height: 100%;
+        position: relative;
+        &:hover .menu-subnav  {
+            display: block;
+            transform-origin: calc(100%) top; 
+            animation: fadeIn 0.5s ease-in;
+            z-index: 2;
+        }
+        a {
+            line-height: 70px;
+            height: 100%;
+            position: relative;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        height: 2px;
+                        width: 0%;
+                        transition: all 0.5s ease;
+                        background-color: $blue-color;
+                    }
+                    &:hover {
+                        color: $blue-color;
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+        }
+    }
+
+    &-links {
+        color: $heading-color;
+        font-weight: 600;
+        &-active {
+            color: #3fd0d4;
+            display: inline-block;
+        }
+    }
+
+    &-subnav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: -5%;
+        list-style: none;
+        min-width: 257px;
+        background-color: #fff;
+        padding: 25px 24px 25px 30px;
+        &-link {
+            a {     
+                position: relative;
+                font-size: 15px;
+                line-height: 25px;
+                height: 100%;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    height: 2px;
+                    width: 0%;
+                    transition: all 0.5s ease;
+                    background-color: $blue-color;
+                    }
+                    &:hover {
+                        color: $blue-color;
+                        &::after {
+                            width: 100%;
+                        }
+                }
+            }
+        }
+    }
+    &-link-active &-subnav {
+        display: block;
+    }
+    
+    &-subnav a {
+        color: black;
+    }
+    &-subnav li {
+        padding: 5px;
+    }
+}
+
+@media (min-width:740px) and (max-width:1023px) {
+    .menu {
+        &-subnav {
+            li { 
+                padding: 10px;
+                border-bottom: 0.1px solid #eae2e2b2;
+                font-size: 17px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 740px){
+    .menu {
+        &-subnav {
+            li { 
+                padding: 10px;
+                border-bottom: 0.1px solid #eae2e2b2;
+                font-size: 17px;
+                font-weight: 500;
+            }
+        }
+    }
+}
